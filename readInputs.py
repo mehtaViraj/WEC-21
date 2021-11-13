@@ -14,7 +14,7 @@ for i in range(len(all_letters)):
 #print(keypad)
 
 #Read text file and remove the newline characters
-f = open("./test_txt/Test1.txt", "rt")
+f = open("./test_txt/example.txt", "rt")
 words = f.readlines()
 len_words = len(words)
 for i in range(len_words):
