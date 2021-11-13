@@ -3,6 +3,9 @@
 2. 0.5s to register the current letter so that another letter in the same number can be tapped
 3. 0.25s to move between letters. Ex: from d (tap 3) to g (tap 4)
 4. 2s for functionality like uppercase or special functionality like voicemail
+
+!!!! CHANGE LINE 20 TO CHANGE TESTING TEXT FILE !!!!
+
 '''
 #Prepare Dict
 all_letters = ['abc','def','ghi','jkl','mno','pqrs','tuv','wxyz']
@@ -14,7 +17,7 @@ for i in range(len(all_letters)):
 #print(keypad)
 
 #Read text file and remove the newline characters
-f = open("./test_txt/example.txt", "rt")
+f = open("./test_txt/Test1.txt", "rt")
 words = f.readlines()
 len_words = len(words)
 for i in range(len_words):
