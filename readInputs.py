@@ -10,7 +10,7 @@ keypad = {}
 #Dict contains the key and no. of key presses required for each letter
 for i in range(len(all_letters)):
     for j in range(len(all_letters[i])):
-        keypad[all_letters[i][j]] = (i+2, j)
+        keypad[all_letters[i][j]] = (i+2, j) # Key: Letter | Value: (key_to_hit, no_of_presses)
 #print(keypad)
 
 #Read text file and remove the newline characters

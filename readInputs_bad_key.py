@@ -10,7 +10,7 @@ keypad = {}
 #Dict contains the key and no. of key presses required for each letter
 for i in range(len(all_letters)):
     for j in range(len(all_letters[i])):
-        keypad[all_letters[i][j]] = (i+2, j)
+        keypad[all_letters[i][j]] = (i+2, j) # Key: Letter | Value: (key_to_hit, no_of_presses)
 #print(keypad)
 
 #Read text file and remove the newline characters
@@ -24,11 +24,11 @@ for i in range(len_words):
 
 broken_key = int(words[0]) #First line is the broken key
 words = words[1:] #The remaining lines are words
-for i in range(len(all_letters[broken_key-2])):
+for i in range(len(all_letters[broken_key-2])): #Loops through letters on broken key
     if i<2:
-        keypad[all_letters[broken_key-2][i]] = ('*', (i % 2) + 1)
+        keypad[all_letters[broken_key-2][i]] = ('*', (i % 2) + 1) #Adds first 2 chars to the second and third depth of *
     else:
-        keypad[all_letters[broken_key-2][i]] = ('#', (i % 2) + 1)
+        keypad[all_letters[broken_key-2][i]] = ('#', (i % 2) + 1) #Adds first 2 chars to the second and third depth of #
 #print(keypad)
 
 #Compute time for each word in the text file.
