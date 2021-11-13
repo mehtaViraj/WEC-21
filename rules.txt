@@ -1,0 +1,15 @@
+1. The timer starts only after the first button is pressed.
+2. Whenever you move to a new button, the time interval between the 2 button presses is assumed to be 0.25s. Ex: If you press ‘3’ once to get ‘d’, and directly after that you press ‘4’ once to get ‘g’, the time interval between the 2 is 0.25s.
+3. To get any letter apart from the first under the same number, say ‘b’ or ‘c’ under the number 2, you need to tap the key after an interval of 0.25s. So, if you want to get ‘b’, you tap 2 twice and between those taps there is an interval of 0.25s. To get ‘c’, you tap 2 thrice with a 0.25s interval between those taps. Thus, to print just ‘c’, it takes 0.5s.
+4. To type the consecutive letters under the same number, say ‘ab’ under the number 2, you need to wait for 0.5s before the system registers the first letter ‘a’. After that you press 2 twice following rule 3 above to get ‘b’. Thus, to get ‘ab’, it takes 0.5+0.25 = 0.75s.
+5. To get capital letters, you need to get to the corresponding small letter (by above methods) and then hold the button for 2s (instead of 0s for a key press). Ex: If you want to get capital B, you will press 2 twice tap (time interval = 0.25s, refer point 3) and on the second tap you will hold the key for 2s. Thus, in total it will take 2.25s to get the letter B.
+6. For keys apart from 2-9, if a functionality requires consecutive taps for that key, the time interval between those taps will be 0.25s like Rule 2 above.
+7. If you need to hold a key to implement any functionality, it will have to be for 2s similar to Rule 5.
+
+
+1. 0.25s for conscecutive taps on the same number
+2. 0.5s to register the current letter so that another letter in the same number can be tapped
+3. 0.25s to move between letters. Ex: from d (tap 3) to g (tap 4)
+4. 2s for functionality like uppercase or special functionality like voicemail 
+
+
